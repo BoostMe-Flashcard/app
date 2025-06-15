@@ -1,0 +1,77 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  margin: 0;
+  background: #f7f3fa;
+  color: #4a1467;
+  text-align: center;
+}
+h1, h2 { color: #9c27b0; }
+a { text-decoration: none; }
+
+.hero {
+  padding: 10px 0px;
+  background: #9c27b0;
+  color: white;
+}
+.app-icon {
+  width: 100px;
+  border-radius: 20px;
+}
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #9c27b0;
+  color: white;
+  border-radius: 30px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+}
+.feature {
+  max-width: 300px;
+}
+.feature img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.gallery {
+  padding: 10px 0px 40px;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.slide {
+  display: none;
+  max-width: 300px;
+}
+.slide.active {
+  display: block;
+}
+
+.qa {
+  padding: 40px 20px;
+  background: #f3e8fc;
+}
+.qabox .bubble {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 10px auto;
+  max-width: 480px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+  padding: 20px;
+  background: #9c27b0;
+  color: white;
+}
