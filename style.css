@@ -75,3 +75,24 @@ footer {
   background: #9c27b0;
   color: white;
 }
+
+.language-switch { padding: 12px 20px; text-align: right; }
+.language-switch a { color: #4a1467; padding: 6px 8px; }
+.language-switch a[aria-current="page"] { font-weight: 700; text-decoration: underline; }
+.hero { padding: 40px 20px 44px; }
+.hero h1 { color: white; line-height: 1.18; font-size: clamp(2rem, 5vw, 3rem); margin: 16px 0; }
+.hero p { max-width: 36rem; margin: auto; line-height: 1.6; }
+.hero .app-icon { width: 76px; height: 76px; }
+.hero .cta-btn { background: white; color: #621979; font-weight: 700; }
+.features { gap: 28px; padding: 35px 20px; }
+.feature { flex: 1 1 230px; }
+.feature p, .update p { line-height: 1.65; }
+.update { max-width: 42rem; padding: 20px; margin: 0 auto 34px; }
+.update .secondary { font-size: .92rem; color: #573c64; }
+.slide { max-width: min(300px, 88vw); }
+.gallery-buttons { margin-top: 14px; }
+.gallery button { border: 1px solid #71368a; background: white; color: #4a1467; border-radius: 8px; min-width: 44px; min-height: 44px; margin: 0 4px; font-size: 1.125rem; cursor: pointer; }
+footer a { color: white; text-decoration: underline; display: inline-block; margin: 6px 9px; }
+footer p { margin-bottom: 0; }
+.support { max-width: 42rem; padding: 24px; margin: auto; text-align: left; line-height: 1.65; }
+.support a { text-decoration: underline; }

@@ -1,82 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BoostMe Flashcards</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>絵で覚える英単語カード</title>
+  <meta name="description" content="イラストと例文で覚える英単語カード。クイズで思い出し、単語帳やお気に入りで復習できます。">
+  <link rel="canonical" href="https://boostme-flashcard.github.io/app/">
+  <link rel="alternate" hreflang="ja" href="https://boostme-flashcard.github.io/app/">
+  <link rel="alternate" hreflang="en" href="https://boostme-flashcard.github.io/app/en/">
+  <link rel="alternate" hreflang="x-default" href="https://boostme-flashcard.github.io/app/">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Hero -->
+  <nav class="language-switch" aria-label="表示言語">
+    <a href="./" lang="ja" aria-current="page">日本語</a>
+    <a href="en/" lang="en">English</a>
+  </nav>
   <header class="hero">
-    <!-- <img src="assets/mascot.png" alt="BoostMe Icon" class="app-icon" /> -->
-    <!-- <h1>BoostMe Flashcards</h1> -->
-    <p class="tagline">絵で覚える英単語アプリ<br>英語力をブースト（爆上げ）！</p>
-<!-- 
-    <a href="#" class="cta-btn">今すぐ使ってみる</a>　 -->
+    <img src="assets/app_icon.png" width="76" height="76" alt="" class="app-icon">
+    <h1>絵と例文で<br>英単語を覚える</h1>
+    <p>イラストと例文で覚える英単語カード。クイズで思い出し、単語帳やお気に入りで復習できます。</p>
+    <a href="https://apps.apple.com/app/id6747309348" class="cta-btn">App Storeで見る</a>
   </header>
 
-  <!-- Features -->
-  <section class="features">
-    <div class="feature">
-      <img src="assets/app_icon.png" alt="Feature 3">
-      <h2>BoostMe Flashcards</h2>
-      <a href="#" class="cta-btn">今すぐ使ってみる</a>
-    </div>
-    <div class="feature">
-      <img src="assets/screen1-0.png" alt="Feature 1">
-      <h3>画像付きの単語カード</h2>
-      <p>覚えやすさ重視のコメディ満載の例文</p>
-    </div>
-    <div class="feature">
-      <img src="assets/screen2-0.png" alt="Feature 2">
-      <h3>復習問題と単語帳</h2>
-      <p>繰り返し復習可能な仕様で記憶に定着</p>
-    </div>
-    <!-- 
-    <div class="feature">
-      <img src="assets/screen3-0.png" alt="Feature 3">
-      <h2>間違えた場合はAIが解説</h2>
-      <p>可愛いキャラのコメントで理解を促進</p>
-    </div> -->
-  </section>
+  <main>
+    <section class="features" aria-label="主な機能">
+      <article class="feature">
+        <img src="assets/screen1-0.png" alt="イラスト付き単語カード" loading="lazy">
+        <h2>イラスト付き単語カード</h2>
+        <p>印象に残るイラストと、思わず笑ってしまう例文で、単語が使われる場面を覚えましょう。</p>
+      </article>
+      <article class="feature">
+        <img src="assets/screen2-0.png" alt="クイズと単語帳" loading="lazy">
+        <h2>クイズと単語帳</h2>
+        <p>例文の空欄に入る単語を考えて理解を確認。覚えたい単語はお気に入りに保存して復習できます。</p>
+      </article>
+    </section>
 
-  <!-- Gallery -->
-  <section class="gallery">
-    <h2>アプリ画面をチェック</h2>
-    <div class="carousel">
-      <img src="assets/screen1.png" class="slide active">
-      <img src="assets/screen1-1.png" class="slide">
-        <!-- <img src="assets/screen2.png" class="slide">
-      <img src="assets/screen2-2.png" class="slide"> -->
-      <img src="assets/screen4-1.png" class="slide active">
-      <img src="assets/screen4-2.png" class="slide">
-      <img src="assets/screen3.png" class="slide">
-    </div>
-    <button onclick="prevSlide()">←</button>
-    <button onclick="nextSlide()">→</button>
-  </section>
+    <section class="update">
+      <h2>次のアップデート</h2>
+      <p>2,391語の単語の発音と、収録済みの例文音声を再生できます。IELTSの6.0・6.5・7.0を目安にしたコースから選び、1回最大10語ずつ学習とクイズを進められるようになります。</p>
+      <p class="secondary">IELTSのスコア帯は教材選びの目安です。BoostMeは独立した学習教材です。</p>
+    </section>
 
-  <!-- Q&A -->
-  <section class="qa">
-    <h2>Q&A</h2>
-    <div class="qabox">
-      <div class="bubble">Q：なぜ学習できる単語数が少ない？<br><strong>A：</strong>β版なためかなり少ないですが、今後追加していく予定です！</div>
-      <div class="bubble">Q：日本語訳は見れる？<br><strong>A：</strong>英文部分をタップすると日本語が表示されます！</div>
-      <div class="bubble">Q：単語の意味がないのはなぜ？<br><strong>A：</strong>イメージと文脈で覚えた方が忘れにくい？からです💡</div>
-      <div class="bubble">Q：アプリの内容は全て正しいですか？<br><strong>A：</strong>画像・コンテンツの一部はAIツールによって生成されているため、全て正しいとは限りません。</div>
-    </div>
-  </section>
+    <section class="gallery">
+      <h2>現在のアプリ画面</h2>
+      
+      <div class="carousel" aria-live="polite">
+        <img src="assets/screen1.png" class="slide active" alt="BoostMeの画面 1" loading="lazy">
+        <img src="assets/screen1-1.png" class="slide" alt="BoostMeの画面 2" loading="lazy">
+        <img src="assets/screen4-1.png" class="slide" alt="BoostMeの画面 3" loading="lazy">
+        <img src="assets/screen4-2.png" class="slide" alt="BoostMeの画面 4" loading="lazy">
+        <img src="assets/screen3.png" class="slide" alt="BoostMeの画面 5" loading="lazy">
+      </div>
+      <div class="gallery-buttons">
+        <button type="button" onclick="prevSlide()" aria-label="前の画像">←</button>
+        <button type="button" onclick="nextSlide()" aria-label="次の画像">→</button>
+      </div>
+    </section>
+  </main>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 BoostMe. All rights reserved.</p>
-    <div class="socials">
-      <a href="privacy.html" style="color:#888;">プライバシーポリシー</a> | <a href="terms.html" style="color:#888;">利用規約</a>| <a href="support.html" style="color:#888;">お問い合わせ</a>
-    </div>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="terms.html">利用規約</a>
+    <a href="support.html">サポート</a>
+    <p>© BoostMe</p>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
